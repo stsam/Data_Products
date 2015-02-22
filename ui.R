@@ -4,7 +4,7 @@ shinyUI(
     headerPanel("Total sunspots per year"),
     
     sidebarPanel(
-      sliderInput('Yr', 'Year', value=2000, min=1749,max=2014, sep="",step=5, animate=TRUE),
+      sliderInput('Yr', 'Year', value=1900, min=1749,max=2014, sep="",step=5, animate=TRUE),
       h3('Prediction of sunspots from 2015 to 2035'),
       numericInput('PYr', label = h4("Year(2015 and 2035)"), 2015, min=2015, max=2035)
       ),
