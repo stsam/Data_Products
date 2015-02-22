@@ -5,7 +5,7 @@ dt <- ts(sunspot.month, frequency=12, start=c(2000,1), end=c(2005,12))
 Freq_data<-aggregate(sunspot.month, nfrequency = 1, FUN = sum)
 Pred <- function(Freq_data){
   fit <- Arima(Freq_data, order=c(3,1,0))
-  data <-forecast(fit, 20)
+  data <-forecast(fit, 25)
   return(data)
 }  
 
